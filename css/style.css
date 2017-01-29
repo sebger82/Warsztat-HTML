@@ -1,0 +1,763 @@
+/*ustawienia ogólne strony*/
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular.woff2') format('woff2'),
+         url('../fonts/raleway-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    font-family: "ralewayregular", sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin: 0 auto; /*środkuje element blokowy*/
+    width: 1200px;
+}
+.containerwew {
+    margin: 0 auto; /*środkuje element blokowy*/
+    width: 1080px;
+}
+.clearfix::after, .clearfix::before {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* nagłówek z menu*/
+.naglowek {
+    background-color: black;
+    color: white;
+    height: 40px;
+}
+
+.nagloweksekcjalewa {
+    line-height: 40px;
+    float: left;
+}
+.logotekst {
+    font-weight: 700;
+}
+.logoziel {
+    color: aqua;
+    font-weight: 900;
+}
+.nagloweksekcjaprawa {
+    float:right;
+}
+.menu {
+    line-height: 40px;
+    list-style: none;
+
+}
+.menu > li {
+    display: inline-block;
+    padding-left: 20px;
+    position: relative;
+    height: 40px;
+    font-weight: 600;
+}
+li:hover > .submenu {
+    display: block;
+    list-style: none;
+}
+.submenu {
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 50px;
+    background-color: black;
+    padding: 5px 20px;
+    line-height: 180%;
+    font-weight: 500;
+}
+.amenu {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+/*artykuły*/
+.divplywajacylewo {
+    float:left;
+    width: auto;
+}
+/*sekcja 1 z tytelem i opisem*/
+.sekcja1 {
+    height: 500px;
+    background-image:  linear-gradient(180deg, white, #bbb);
+}
+.fotel {
+    width: auto;
+    height: auto;
+    margin-top: 100px;
+    position: relative;
+}
+.nawiaslewy {
+    position: absolute;
+    line-height: 337px;
+    color: aqua;
+    font-size: 5rem;
+}
+.nawiasprawy {
+    float:right;
+    margin-top: 100px;
+    line-height: 337px;
+    color: aqua;
+    font-size: 5rem;
+}
+.opisfotela {
+    width: 480px;
+    margin-top: 150px;
+    text-align: center;
+}
+.naglowekczarny {
+    font-weight: 700;
+    font-size: 2.5em;
+    text-align: center;
+}
+.naglowekziel {
+    font-weight: 900;
+    font-size: 2.5em;
+    text-align: center;
+    color: aqua;
+}
+.tekst {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 150%;
+}
+.input1 {
+    background-color: aqua;
+    color: white;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 5%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: block;
+    font-size: 1.4rem;
+}
+/*sekcja 2 z dwoma zdjeciami i opisem*/
+.sekcja2 {
+    height: 320px;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.div1 {
+    width: 329px;
+    height: 225px;
+    background-image: url(../images/box1_img.jpg);
+    position: relative;
+}
+.div2 {
+    width: 329px;
+    height: 225px;
+    background-image: url(../images/box2_img.jpg);
+    position: relative;
+}
+.div3 {
+    width: 329px;
+    height: 255px;
+    position: relative;
+    border: 1px solid dimgrey;
+}
+.indiv1 {
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 329px;
+    height: 60px;
+    margin-top: 150px;
+}
+.indiv1kreska {
+    background-color: aqua;
+    width: 130px;
+    height: 8px;
+    position:absolute;
+    margin-top: 185px;
+    margin-left: 20px;
+}
+.spanwew {
+    font-size: 0.9rem;
+    font-weight: 900;
+    margin: 20px 20px;
+    line-height: 50px;
+}
+.indiv1a {
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 329px;
+    height: 50px;
+    margin-top: 10px;
+}
+.indiv1kreskaa {
+    background-color: aqua;
+    width: 130px;
+    height: 8px;
+    position:absolute;
+    margin-top: 45px;
+    margin-left: 20px;
+}
+.indiv1b {
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 329px;
+    height: auto;
+    margin-top: 70px;
+}
+.tekst1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 140%;
+    color: dimgrey;
+    padding: 0 5px;
+}
+/*sekcja 3 z cennikiem*/
+.sekcja3 {
+    height: 720px;
+    background-color: rgba(238, 238, 238, 1);
+}
+.div12 {
+    width: 720PX;
+    height: 120px;
+    position: relative;
+}
+.indiv2 {
+    position:absolute;
+    width: 720px;
+    height: 60px;
+    margin-top: 32px;
+}
+.spanwew2 {
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 50px;
+    color: dimgrey;
+}
+.indiv1kreska2 {
+    background-color: aqua;
+    width: 300px;
+    height: 8px;
+    position:absolute;
+    margin-top: 75px;
+}
+/*boks 1*/
+.box1 {
+    width: 330px;
+    height: 500px;
+    border: 2px solid grey;
+    position: relative;
+    background-color: rgba(245, 245, 245, 1);
+}
+.kwadratwiekszy {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background-color: rgba(245, 245, 245, 1);
+    border: 2px solid grey;
+    margin-top: -40px;
+    border-radius: 50%;
+    margin-left: 135px; 
+}
+.kwadratmniejszy {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: grey;
+    border: 2px solid grey;
+    border-radius: 50%;
+    margin-top: -25px;
+    margin-left: 150px;
+}
+.kwadratnajwiekszy {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    background-color: white;
+    border: 2px solid grey;
+    margin-top: 80px;
+    border-radius: 50%;
+    margin-left: 100px; 
+}
+.divnapisgorny {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 100px;
+    width: 130px;
+    height: 35px;
+    text-align: center;
+}
+.napisgorny {
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 50px;
+    color:aqua;
+}
+.divnapissrodkowy1 {
+    width: 326px;
+    height: 45px;
+    position: absolute;
+    margin-top: 245px;
+    text-align: center;
+    background-color: rgba(220, 220, 220, 1);
+}
+.napissrodkowy1 {
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 45px;
+    color:grey;
+}
+.divnapisdolny {
+    width: 326px;
+    height: 45px;
+    position: absolute;
+    margin-top: 290px;
+    text-align: center;
+    background-color: rgba(240, 240, 240, 1);
+}
+.napisdolny {
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 45px;
+    color:grey;
+}
+.input2 {
+    background-color: aqua;
+    color: white;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 5%;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+.form2 {
+    width: 326px;
+    position: absolute;
+    margin-top: 440px;
+    text-align: center;
+}
+.divnapiswewnetrzny1 {
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 100px;
+    width: 130px;;
+    text-align: center;
+    
+}
+.napiswewnetrzny1 {
+    font-size: 2.7rem;
+    font-weight: 900;
+    color:gray;
+}
+sup {
+    font-size: 1rem;
+}
+.divnapiswewnetrzny2 {
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 100px;
+    width: 130px;;
+    text-align: center;
+    
+}
+.napiswewnetrzny2 {
+    font-size: 1rem;
+    font-weight: 900;
+    color:gray;
+}
+/*boks 2*/
+.box2 {
+    width: 330px;
+    height: 500px;
+    border: 2px solid aqua;
+    position: relative;
+    background-color: aqua;
+}
+.kwadratwiekszya {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background-color: aqua;
+    border: 2px solid aqua;
+    margin-top: -40px;
+    border-radius: 50%;
+    margin-left: 135px; 
+}
+.kwadratmniejszya {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-top: -25px;
+    margin-left: 150px;
+}
+.kwadratnajwiekszya {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    background-color: white;
+    border: 2px solid aqua;
+    margin-top: 80px;
+    border-radius: 50%;
+    margin-left: 100px; 
+}
+.divnapisgornya {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 70px;
+    width: 190px;
+    height: 35px;
+    text-align: center;
+}
+.napisgornya {
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 50px;
+    color:white;
+}
+.divnapissrodkowy1a {
+    width: 326px;
+    height: 45px;
+    position: absolute;
+    margin-top: 245px;
+    text-align: center;
+    background-color: rgba(240, 240, 240, 1);
+}
+.napissrodkowy1a {
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 45px;
+    color:grey;
+}
+.divnapissrodkowy2a {
+    width: 326px;
+    height: 45px;
+    position: absolute;
+    margin-top: 290px;
+    text-align: center;
+    background-color: rgba(220, 220, 220, 1);
+}
+.napissrodkowy2a {
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 45px;
+    color:grey;
+}
+.divnapisdolnya {
+    width: 326px;
+    height: 45px;
+    position: absolute;
+    margin-top: 335px;
+    text-align: center;
+    background-color: rgba(240, 240, 240, 1);
+}
+.napisdolnya {
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 45px;
+    color:grey;
+}
+.input2a {
+    background-color: white;
+    color: aqua;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 5%;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+.form2a {
+    width: 326px;
+    position: absolute;
+    margin-top: 440px;
+    text-align: center;
+}
+.divnapiswewnetrzny1a {
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 100px;
+    width: 130px;;
+    text-align: center;
+}
+.napiswewnetrzny1a {
+    font-size: 2.7rem;
+    font-weight: 900;
+    color:gray;
+}
+sup {
+    font-size: 1rem;
+}
+.divnapiswewnetrzny2a {
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 100px;
+    width: 130px;;
+    text-align: center;
+}
+.napiswewnetrzny2a {
+    font-size: 1rem;
+    font-weight: 900;
+    color:gray;
+}
+/*boks 3*/
+.box3 {
+    width: 330px;
+    height: 500px;
+    border: 2px solid grey;
+    position: relative;
+    background-color: rgba(245, 245, 245, 1);
+}
+.kwadratwiekszyb {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background-color: rgba(245, 245, 245, 1);
+    border: 2px solid grey;
+    margin-top: -40px;
+    border-radius: 50%;
+    margin-left: 135px; 
+}
+.kwadratmniejszyb {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: grey;
+    border: 2px solid grey;
+    border-radius: 50%;
+    margin-top: -25px;
+    margin-left: 150px;
+}
+.kwadratnajwiekszyb {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    background-color: white;
+    border: 2px solid grey;
+    margin-top: 80px;
+    border-radius: 50%;
+    margin-left: 100px; 
+}
+.divnapisgornyb {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 70px;
+    width: 190px;
+    height: 35px;
+    text-align: center;
+}
+.napisgornyb {
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 50px;
+    color:aqua;
+}
+.divnapissrodkowy1b {
+    width: 326px;
+    height: 45px;
+    position: absolute;
+    margin-top: 245px;
+    text-align: center;
+    background-color: rgba(220, 220, 220, 1);
+}
+.napissrodkowy1b {
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 45px;
+    color:grey;
+}
+.divnapissrodkowy2b {
+    width: 326px;
+    height: 45px;
+    position: absolute;
+    margin-top: 290px;
+    text-align: center;
+    background-color: rgba(240, 240, 240, 1);
+}
+.napissrodkowy2b {
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 45px;
+    color:grey;
+}
+.divnapissrodkowy3b {
+    width: 326px;
+    height: 45px;
+    position: absolute;
+    margin-top: 335px;
+    text-align: center;
+    background-color: rgba(220, 220, 220, 1);
+}
+.napissrodkowy3b {
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 45px;
+    color:grey;
+}
+.divnapisdolnyb {
+    width: 326px;
+    height: 45px;
+    position: absolute;
+    margin-top: 380px;
+    text-align: center;
+    background-color: rgba(240, 240, 240, 1);
+}
+.napisdolnyb {
+    font-size: 1.4rem;
+    font-weight: 900;
+    line-height: 45px;
+    color:grey;
+}
+.input2b {
+    background-color: aqua;
+    color: white;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 5%;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+.form2b {
+    width: 326px;
+    position: absolute;
+    margin-top: 440px;
+    text-align: center;
+}
+.divnapiswewnetrzny1b {
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 100px;
+    width: 130px;;
+    text-align: center;   
+}
+.napiswewnetrzny1b {
+    font-size: 2.7rem;
+    font-weight: 900;
+    color:gray;
+}
+.divnapiswewnetrzny2b {
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 100px;
+    width: 130px;;
+    text-align: center;   
+}
+.napiswewnetrzny2b {
+    font-size: 1rem;
+    font-weight: 900;
+    color:gray;
+}
+/*sekcja 4 z formularzem*/
+.sekcja4 {
+    height: 550px;
+}
+.div123 {
+    width: 720PX;
+    height: 85px;
+    position: relative;
+}
+.divformularzowy {
+    width: 620px;
+    height: 330px;
+}
+.divimie {
+    border: 1px solid aqua;
+    font-size: 2.5rem;
+    color: grey;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.divmail {
+    border: 1px solid aqua;
+    font-size: 2.5rem;
+    color: grey;
+    padding: 10px;
+    margin-bottom: 20px
+}
+.divtresc {
+    border: 1px solid aqua;
+    font-size: 2.5rem;
+    color: grey;
+    padding: 10px;
+    height: 190px;
+}
+.divwysylajacy {
+    width: 364px;
+    height: 430px;
+    position: relative;
+}
+#krzesloczerwone {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -30px;
+}
+#potwierdzenie {
+    position: absolute;
+    margin-top: 220px;
+    border: 1px solid aqua;
+    padding: 10px 5px 0 0;
+}
+.tekstpotwierdzajacy {
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 65px;
+    color: grey;
+    font-size: 1.2rem;
+    padding: 5px 0 0 5px;
+}
+.input6 {
+    background-color: aqua;
+    color: white;
+    padding: 18px;
+    border: none;
+    border-radius: 5%;
+    margin: 0 auto;
+    margin-top: 300px;
+    display: block;
+    font-size: 2.2rem;
+    width: 364px;
+    font-weight: 600;
+}
+/* stopka*/
+.stopka {
+    background-color: white;
+    color: grey;
+    height: 90px;
+}
+
+.stopkasekcjalewa {
+    line-height: 90px;
+    float: left;
+}
+.stopkatekst {
+    font-weight: 700;
+}
+.stopkasekcjaprawa {
+    line-height: 90px;
+    float:right;
+}
+.pogrubienie {
+    font-weight: 900;
+}
+.menustopka {
+    list-style: none;
+    line-height: 70px;
+    margin-right: 110px;
+}
+.menustopka > li {
+    display: inline-block;
+    padding-top: 20px;
+}
+.astopka {
+    text-decoration: none;
+}
